@@ -20,7 +20,30 @@
          <nav class=" px-[36px] py-[34px] flex justify-between items-center ">
             <!-- <i class="fa-solid fa-bars"></i> -->
             <!-- <i class="fa-solid fa-xmark"></i> -->
-           
+            
+            <div class="sidebar none">
+                <div class="flex justify-between items-center ">
+
+                    <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] bg-[#AFCD80] text-white">   <i class="fa-solid fa-share-nodes "></i></div>
+
+                    <div class=""><button class="border px-4 py-2 bg-[#2042B6] rounded-[14px]  text-white">Download the 2024 Report</button></div>
+
+                    <button onclick=sidebarClose() class="px-2 "> <i class="fa-solid fa-xmark cursor-pointer w-[15px] h-[15px]"></i></button>
+                    
+                </div>
+
+                <ul class="my-8">
+                    <li  class="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">The WPPOOL Index</a></li>
+                    <li class ="text-[18px]"><a href="#all-companies" class="block p-2  hover:bg-gray-200">All Companies</a></li>
+                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">Potential Future Listings</a></li> 
+                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">State of USA</a></li> 
+                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">Stories & Ideas</a></li> 
+                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">About WPPOOL</a></li> 
+                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">WPPOOL Portfolio Companies</a></li> 
+
+                    <li class ="text-[21px] text-[#2042B6] mt-4"><a href="#" class="block p-2  hover:bg-gray-200">Visit WPPOOL</a></li> 
+                </ul>
+            </div>
 
             <!-- logo -->
             <div class="">
@@ -34,22 +57,14 @@
                 <button class="border rounded-[124px] py-[16px] px-4 text-white">Download the 2024 Report</button>
 
                 <div class="ml-4">
-                    <button id="menuButton" class="focus:outline-none text-white">
+                    <button onclick=sidebarOpen()  id="" class="menuOpen focus:outline-none text-white">
                          <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
          </nav>
 
-         <!-- toogling menu -->
-
-         <!-- <div id="menu" class="hidden bg-white shadow-md mt-2 p-4">
-            <ul>
-                <li><a href="#" class="block p-2 text-blue-800 hover:bg-gray-200">Menu Item 1</a></li>
-                <li><a href="#" class="block p-2 text-blue-800 hover:bg-gray-200">Menu Item 2</a></li>
-                <li><a href="#" class="block p-2 text-blue-800 hover:bg-gray-200">Menu Item 3</a></li>
-            </ul>
-        </div> -->
+         
          <!-- Hero Section -->
 
          <div class=" relative pt-[107px] pl-[40px]  ">
@@ -90,7 +105,7 @@
 
      <!-- All Company Section -->
 
-     <section class="my-12  p-[25px] ">
+     <section id="all-companies" class="my-12  p-[25px] ">
         <!-- headings -->
         <div class="p-[53px] bg-white rounded-[20px]">
             <div class="flex justify-between  ">
@@ -543,7 +558,7 @@
             <section class="my-12 max-w-5xl mx-auto ">
                 <div class="flex gap-[100px]">
                     <div class="flex-1">
-                        <h2 class="text-4xl">Experience remarkable 
+                        <h2 class="text-4xl leading-[36px]">Experience remarkable 
                             WordPress products with a 
                             new level of power, beauty, 
                             and human-centered designs.</h2>
@@ -551,14 +566,14 @@
     
                     <div class="flex justify-between gap-[112px] flex-1">
                         <div>
-                            <ul>
-                                <li class="text-[#9FA0A1] text-xl">Jump to</li>
-                                <li class="text-[#115CD9] text-xl">About Us</li>
-                                <li class="text-[#115CD9] text-xl">Portfolio</li>
-                                <li class="text-[#115CD9] text-xl">News</li>
-                                <li class="text-[#115CD9] text-xl">Stories</li>
-                                <li class="text-[#115CD9] text-xl">Jobs</li>
-                                <li class="text-[#115CD9] text-xl">About Us</li>
+                            <ul class="text-xl ">
+                                <li class="text-[#9FA0A1] ">Jump to</li>
+                                <li class="text-[#115CD9] ">About Us</li>
+                                <li class="text-[#115CD9] ">Portfolio</li>
+                                <li class="text-[#115CD9] ">News</li>
+                                <li class="text-[#115CD9] ">Stories</li>
+                                <li class="text-[#115CD9] ">Jobs</li>
+                                <li class="text-[#115CD9] ">About Us</li>
                             </ul>
                         </div>
 
