@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="script.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>WPPOOL Index</title>
 </head>
 <body class="max-w-7xl mx-auto">
@@ -33,13 +33,13 @@
                 </div>
 
                 <ul class="my-8">
-                    <li  class="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">The WPPOOL Index</a></li>
+                    <li  class="text-[18px]"><a href="#wppool-index" class="block p-2  hover:bg-gray-200">The WPPOOL Index</a></li>
                     <li class ="text-[18px]"><a href="#all-companies" class="block p-2  hover:bg-gray-200">All Companies</a></li>
-                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">Potential Future Listings</a></li> 
+                    <li class ="text-[18px]"><a href="#potential" class="block p-2  hover:bg-gray-200">Potential Future Listings</a></li> 
                     <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">State of USA</a></li> 
-                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">Stories & Ideas</a></li> 
-                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">About WPPOOL</a></li> 
-                    <li class ="text-[18px]"><a href="#" class="block p-2  hover:bg-gray-200">WPPOOL Portfolio Companies</a></li> 
+                    <li class ="text-[18px]"><a href="#stories" class="block p-2  hover:bg-gray-200">Stories & Ideas</a></li> 
+                    <li class ="text-[18px]"><a href="#about" class="block p-2  hover:bg-gray-200">About WPPOOL</a></li> 
+                    <li class ="text-[18px]"><a href="#companies" class="block p-2  hover:bg-gray-200">WPPOOL Portfolio Companies</a></li> 
 
                     <li class ="text-[21px] text-[#2042B6] mt-4"><a href="#" class="block p-2  hover:bg-gray-200">Visit WPPOOL</a></li> 
                 </ul>
@@ -103,6 +103,83 @@
          </div>
      </header>
 
+
+     <!-- Wppool index dashboard -->
+
+     <section id="wppool-index" class="max-w-6xl mx-auto my-12 bg-white py-6 px-5">
+        <div class="flex flex-col lg:flex-row w-full">
+            <aside class="w-full lg:w-1/5 bg-[#EFF3F6] rounded-2xl p-2 flex flex-col">
+                <nav>
+                    <ul class="list-none p-0 m-0 flex-grow">
+                        <li class="p-4 flex justify-between bg-[#2042B6] rounded-md text-white"><a href="#" class=" no-underline">The Index</a> <span><i class="fa-solid fa-chevron-down"></i></span></li>
+                        <li class="p-4"><a href="#" class=" no-underline">The Index Tab Two</a></li>
+                        <li class="p-4"><a href="#" class=" no-underline">The Index Tab Three</a></li>
+                        <li class="p-4"><a href="#" class=" no-underline">The Index Tab Four</a></li>
+                        <li class="p-4"><a href="#" class=" no-underline">The Index Tab Five</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="w-full lg:w-4/5 p-4 overflow-y-auto">
+                <header class="flex flex-col  mb-6">
+                   
+                    <h1 class="text-4xl flex items-center text-left font-bold mb-4"> <img class="w-[46px] h-[41px]" src="./images/Union.png" alt=""> <span>The WPPOOL Index</span></h1>
+
+                    <div class="flex flex-wrap  w-full">
+
+                        <!-- Info 1 -->
+                        <div class="bg-[#F3F3F3] flex gap-6 items-center  p-2 rounded m-2"><h1 class="text-[#FC714D] text-[30px]">+66.2% </h1> 
+                            <div class="flex gap-2"><h5 class="text-right text-xs">WPPOOL <br> Index</h5> <div class="bg-[#FC714D] w-1 h-[32px]"></div></div>
+                        </div>
+
+                        <!-- info 2 -->
+                        <div class="bg-[#F3F3F3] flex gap-6 items-center  p-2 rounded m-2"><h1 class="text-[#615DE3] text-[30px]">+26.6% </h1> 
+                            <div class="flex gap-2"><h5 class="text-right text-xs">Goolge  <br> Index</h5> <div class="bg-[#615DE3] w-1 h-[32px]"></div></div>
+                        </div>
+
+                        <!-- info 3 -->
+                        <div class="bg-[#F3F3F3] flex gap-6 items-center  p-2 rounded m-2"><h1 class="text-[#7CA63A] text-[30px]">+34.1%</h1> 
+                            <div class="flex gap-2"><h5 class="text-right text-xs">Microsoft</h5> <div class="bg-[#7CA63A] w-1 h-[32px]"></div></div>
+                        </div>
+                        <!-- info 4 -->
+                        <div class="bg-[#F3F3F3] flex gap-6 items-center  p-2 rounded m-2"><h1 class="text-[#6F34A1] text-[30px]">+17%</h1> 
+                            <div class="flex gap-2"><h5 class="text-right text-xs">Twitter <br> Index </h5> <div class="bg-[#6F34A1] w-1 h-[32px]"></div></div>
+                        </div>
+                        
+
+
+                       
+                        
+                        
+                    </div>
+
+                    <div class="my-3 flex justify-between">
+                        <div class="flex items-center gap-[13px]">
+                            <div class="px-4 py-2 flex  bg-[#2042B6] rounded-[124px] text-white">Selectors<span><i class="fa-solid fa-chevron-down ml-12"></i></span></div> 
+
+
+                            <div class="px-4 py-2 flex  bg-[#2042B6] rounded-[124px] text-white">Types of IPO<span><i class="fa-solid fa-chevron-down ml-12"></i></span></div> 
+
+                             
+                        </div>
+
+                        <div>
+                            <div class="px-4 py-2 flex justify-around gap-5 bg-[#EFF3F6] rounded-[124px] text-[#748DA1]">
+                                <p>1Y</p>
+                                <p>YTD</p>
+                                <p class="bg-[#2042B6] text-white rounded-[124px] px-2">6M</p>
+                                <p>1M</p>
+                                <p>1W</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="relative h-96">
+                    <canvas id="chart"></canvas>
+                </div>
+            </main>
+        </div>
+     </section>
      <!-- All Company Section -->
 
      <section id="all-companies" class="my-12  p-[25px] ">
@@ -277,7 +354,7 @@
 
      <!-- Potential Section -->
 
-     <section class="my-12 max-w-5xl mx-auto">
+     <section id="potential" class="my-12 max-w-5xl mx-auto">
             <div class="">
 
                 <div>
@@ -326,7 +403,7 @@
 
      <!-- Stories and Idea Section -->
 
-     <section class="my-12 max-w-5xl mx-auto">
+     <section id="stories" class="my-12 max-w-5xl mx-auto">
 
         <div>
             <div class="mb-16">
@@ -440,7 +517,7 @@
 
      <!-- About Section -->
 
-     <section class="my-12 max-w-5xl mx-auto">
+     <section id="about" class="my-12 max-w-5xl mx-auto">
         <div class="rounded-lg bg-white pl-5 flex justify-between">
                 <div class="w-[628px] space-y-5 py-[75px]">
                     <h1 class="text-[#191618] text-5xl">About WPPOOL</h1>
@@ -459,7 +536,7 @@
 
      <!-- Portfolio Companies Section -->
 
-     <section class="my-12 max-w-5xl mx-auto">
+     <section id="companies" class="my-12 max-w-5xl mx-auto">
         <h1 class="text-[#191618] text-5xl mb-12">Selected WPPOOL Portfolio Companies</h1>
 
         <div>
