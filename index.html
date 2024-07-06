@@ -24,9 +24,10 @@
 <body class="max-w-7xl mx-auto ">
    
       <!-- header section -->
-  <header class=" ">
+  <header class="relative h-screen">
     <!-- nav -->
-    <nav id="navbar" class=" max-w-6xl mx-auto  bg-[#2042B6] fixed top-0 left-0 right-0 z-10 px-5 py-2 rounded-lg mt-[20px] flex justify-between items-center transition-bg">
+    <nav id="navbar" class=" max-w-6xl mx-5  w-full bg-[#2042B6] fixed top-0  z-10 px-5 py-2 rounded-lg mt-[20px] flex justify-between items-center transition-bg">
+
       <div class="sidebar none">
         <div class="flex justify-between items-center">
           <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] bg-[#AFCD80] text-white">
@@ -58,10 +59,10 @@
       </div>
 
       <div id="rightSection" class="flex text-white items-center gap-4">
-        <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] ">
+        <div class="rounded-full text-center hidden md:block border w-[50px] h-[50px] p-[14px] ">
           <i class="fa-solid fa-share-nodes"></i>
         </div>
-        <button class="border rounded-[124px] py-[16px] px-4 ">Download the 2024 Report</button>
+        <button class="border rounded-[124px] py-[16px] px-4 hidden md:block">Download the 2024 Report</button>
         <div class="ml-4">
           <button onclick="sidebarOpen()" id="" class="menuOpen focus:outline-none ">
             <i class="fa-solid fa-bars"></i>
@@ -73,33 +74,41 @@
     <!-- Hero Section -->
     <div class="bg-[#2042B6] h-screen  relative pb-6 pt-[107px] pl-[40px]">
       <div class="w-full">
-        <div class="flex items-center text-white">
-          <div class="w-[312px] flex flex-col gap-[50px]">
+        <div class="flex items-center flex-col-reverse lg:flex-row text-white">
+          <div class="lg:w-[312px] grid grid-cols-2 my-4 lg:grid-cols-1  gap-3 lg:gap-[50px]">
             <div>
-              <h1 class="text-4xl">60</h1>
+              <h1 class="text-xl lg:text-4xl">60</h1>
               <p>Countries</p>
             </div>
             <div>
-              <h1 class="text-4xl">$100B</h1>
+              <h1 class="text-xl lg:text-4xl">$100B</h1>
               <p>Market cap</p>
             </div>
             <div>
-              <h1 class="text-4xl">3.5x</h1>
+              <h1 class="text-xl lg:text-4xl">3.5x</h1>
               <p>Revenue multiple</p>
             </div>
             <div>
-              <h1 class="text-4xl">60%</h1>
+              <h1 class="text-xl lg:text-4xl">60%</h1>
               <p>LTM avg. revenue growth rate</p>
             </div>
           </div>
           <div>
-            <h1 class="text-[78px]">The WPPOOL Index</h1>
-            <p>Monitor the performance of emerging, publicly traded, financial technology companies</p>
+            <h1 class="text-2xl lg:text-[78px]">The WPPOOL Index</h1>
+            <p class="lg:mt-8">Monitor the performance of emerging, publicly traded, financial technology companies</p>
           </div>
         </div>
       </div>
-      <div class="absolute rotate-12 top-9  left-[420px] mix-blend-multiply" style="background-image: url('./images/ff21461eecf254c2441f5f846da1202f.png'); background-size: cover; background-repeat: no-repeat; width: 549px; height: 490px;">
-      </div>
+      
+    </div>
+
+    <div  class="w-16 h-16 rounded-full text-center bg-white absolute right-5 bottom-8 p-4">
+        <a class="text-2xl text-center cursor-pointer" href="#footer">
+            &darr;
+        </a>
+    </div>
+
+    <div class="absolute hidden lg:block rotate-12 lg:top-9  lg:left-[420px] mix-blend-multiply" style="background-image: url('./images/ff21461eecf254c2441f5f846da1202f.png'); background-size: cover; background-repeat: no-repeat; width: 549px; height: 490px;">
     </div>
   </header>
 
@@ -122,7 +131,7 @@
             <main class="w-full lg:w-4/5 p-4 overflow-y-auto">
                 <header class="flex flex-col  mb-6">
                    
-                    <h1 class="text-4xl flex items-center text-left font-bold mb-4"> <img class="w-[46px] h-[41px]" src="./images/Union.png" alt=""> <span>The WPPOOL Index</span></h1>
+                    <h1 class="text-xl lg:text-4xl flex items-center text-left font-bold mb-4"> <img class="w-[46px] h-[41px]" src="./images/Union.png" alt=""> <span>The WPPOOL Index</span></h1>
 
                     <div class="flex flex-wrap  w-full">
 
@@ -141,7 +150,7 @@
                             <div class="flex gap-2"><h5 class="text-right text-xs">Microsoft</h5> <div class="bg-[#7CA63A] w-1 h-[32px]"></div></div>
                         </div>
                         <!-- info 4 -->
-                        <div class="bg-[#F3F3F3] flex gap-6 items-center  p-2 rounded m-2"><h1 class="text-[#6F34A1] text-[30px]">+17%</h1> 
+                        <div class="bg-[#F3F3F3] flex gap-6 items-center py-2  px-6 rounded m-2"><h1 class="text-[#6F34A1] text-[30px]">+17%</h1> 
                             <div class="flex gap-2"><h5 class="text-right text-xs">Twitter <br> Index </h5> <div class="bg-[#6F34A1] w-1 h-[32px]"></div></div>
                         </div>
                         
@@ -152,8 +161,8 @@
                         
                     </div>
 
-                    <div class="my-3 flex justify-between">
-                        <div class="flex items-center gap-[13px]">
+                    <div class="my-3 flex flex-col lg:flex-row justify-between">
+                        <div class="flex flex-col lg:flex-row items-center gap-[13px]">
                             <div class="px-4 py-2 flex  bg-[#2042B6] rounded-[124px] text-white">Selectors<span><i class="fa-solid fa-chevron-down ml-12"></i></span></div> 
 
 
@@ -182,14 +191,14 @@
      </section>
      <!-- All Company Section -->
 
-     <section id="all-companies" class="my-12  p-[25px] ">
+     <section id="all-companies" class="lg:my-12 p-3 lg:p-[25px] ">
         <!-- headings -->
-        <div class="p-[53px] bg-white rounded-[20px]">
-            <div class="flex justify-between  ">
-                <h1 class="text-[#191618] text-5xl">All Companies</h1>
+        <div class="p-8 lg:p-[53px] bg-white rounded-[20px]">
+            <div class="flex flex-col lg:flex-row justify-between  ">
+                <h1 class="text-[#191618] text-2xl lg:text-5xl">All Companies</h1>
                 
                <div class="relative">
-                <input class="search border w-[588px] rounded-lg pl-[28px] py-[17px] bg-gray-100" type="text" placeholder="Search Companies">
+                <input class="search border lg:w-[588px] rounded-lg pl-[28px] py-[17px] bg-gray-100" type="text" placeholder="Search Companies">
 
               <div class="absolute left-2 cursor-pointer  bottom-4">
                 <i class="fa fa-search "></i>
@@ -343,8 +352,8 @@
             </div>
 
 
-            <div id="buttons" class="flex justify-center items-center gap-3">
-                    <button class="bg-[#2042B6] shadow-btn text-white border rounded-[124px] py-[18px] pr-[18px] pl-[19px]">Download ‘All Companies’ Data</button>
+            <div id="buttons" class="flex flex-col lg:flex-row justify-center items-center gap-3">
+                    <button class="bg-[#2042B6] shadow-btn text-white border rounded-[124px] px-1 py-2 lg:py-[18px] lg:pr-[18px] lg:pl-[19px]">Download ‘All Companies’ Data</button>
                     <button class="bg-[#2042B6] shadow-btn text-white border rounded-[124px] py-[18px] pr-[18px] pl-[19px]">View Methodology</button>
                     
             </div>
@@ -354,16 +363,16 @@
 
      <!-- Potential Section -->
 
-     <section id="potential" class="my-12 max-w-5xl mx-auto">
+     <section id="potential" class="px-4 lg:px-0 my-12 max-w-5xl mx-auto">
             <div class="">
 
                 <div>
-                    <h1 class="text-[#191618] text-5xl">Potential Future Listings</h1>
+                    <h1 class="text-[#191618] text-2xl lg:text-5xl">Potential Future Listings</h1>
                     <p class="my-[18px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. <br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
                 </div>
 
 
-                <div class="grid grid-cols-5 gap-5 ">
+                <div class="grid grid-cols-2 lg:grid-cols-5 gap-5 ">
                     <div class="bg-[#FFFFFF] px-[42px] border border-red-400 rounded-md py-[32px] inline-block h-[120px]">
                         <img src="./images/Group 227.png" alt="">
                     </div>
@@ -404,17 +413,17 @@
 
       <!-- State os USA Section -->
 
-       <section id="state" class="relative">
+       <section id="state" class="relative px-4 lg:px-0">
 
-        <div class="absolute  rotate-12 top-16 left-[420px] mix-blend-multiply" style="background-image: url('./images/Group\ 364.png'); background-size: cover; background-repeat: no-repeat; width: 549px; height: 542px;">
+        <div class="absolute hidden lg:block rotate-12 top-16 left-[420px] mix-blend-multiply" style="background-image: url('./images/Group\ 364.png'); background-size: cover; background-repeat: no-repeat; width: 549px; height: 542px;">
 
         </div>
 
         <div class="max-w-5xl mx-auto">
             <div class="mb-16">
-                <h1 class="text-[#191618] text-5xl">State of USA</h1>
+                <h1 class="text-[#191618] text-2xl lg:text-5xl">State of USA</h1>
                
-                <div class="px-4 my-6 py-2 w-[200px] flex justify-between items-center bg-[#2042B6] rounded-[124px] text-white "><span class="text-[42px]">2024</span><span><i class="fa-solid fa-chevron-down ml-12"></i></span></div> 
+                <div class="px-4 my-6 py-2 w-[200px] flex justify-between items-center bg-[#2042B6] rounded-[124px] text-white "><span class="lg:text-[42px]">2024</span><span><i class="fa-solid fa-chevron-down ml-12"></i></span></div> 
 
                 
                 <p>Click through the slides or download the report to view natively on your device.</p>
@@ -460,7 +469,7 @@
                  
              </div>
 
-             <div class="px-28 flex justify-between">
+             <div class="lg:px-28 mt-12 lg:mt-0 flex flex-col lg:flex-row justify-between gap-4">
 
                 <div class="flex items-center gap-8 ">
                    
@@ -488,17 +497,17 @@
        </section>
      <!-- Stories and Idea Section -->
 
-     <section id="stories" class="my-12 max-w-5xl mx-auto">
+     <section id="stories" class="px-4 lg:px-0 my-12 max-w-5xl mx-auto">
 
         <div>
             <div class="mb-16">
-                <h1 class="text-[#191618] text-5xl">Stories & Ideas</h1>
+                <h1 class="text-[#191618] text-2xl lg:text-5xl">Stories & Ideas</h1>
                 <p class="my-[18px]">The latest news and updates </p>
             </div>
 
             <!-- Cards -->
 
-            <div class="grid grid-cols-3 space-x-5 ">
+            <div class="grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-3 space-x-5 ">
                 <!-- card 1 -->
                  
                  <div class="h-[220px] relative  rounded-lg bg-white pl-5">
@@ -515,7 +524,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="h-[220px] relative  rounded-lg bg-white pl-5">
+                <div class=" relative  rounded-lg bg-white pl-5">
 
                     <div class="pt-[90px] space-y-[10px] ">
                         <h5 class="text-[#2042B6]">By: Nayem Khan</h5>
@@ -547,7 +556,7 @@
                 </div>
                 
             </div>
-            <div class="grid mt-[80px] grid-cols-3 space-x-5 ">
+            <div class="grid grid-cols-1 gap-12 lg:gap-0 mt-[80px] lg:grid-cols-3 space-x-5 ">
                 <!-- card 4 -->
                  
                  <div class="h-[220px] relative  rounded-lg bg-white pl-5">
@@ -602,18 +611,18 @@
 
      <!-- About Section -->
 
-     <section id="about" class="my-12 max-w-5xl mx-auto">
-        <div class="rounded-lg bg-white pl-5 flex justify-between">
-                <div class="w-[628px] space-y-5 py-[75px]">
-                    <h1 class="text-[#191618] text-5xl">About WPPOOL</h1>
-                    <h3 class="text-[#7D7F81] text-3xl"> Investing in wppool for over 50 years</h3>
+     <section id="about" class="px-4 lg:px-0 my-12 max-w-5xl mx-auto">
+        <div class="rounded-lg bg-white pl-5 flex flex-col lg:flex-row justify-between">
+                <div class="lg:w-[628px] space-y-5 py-[75px]">
+                    <h1 class="text-[#191618] text-2xl lg:text-5xl">About WPPOOL</h1>
+                    <h3 class="text-[#7D7F81] lg:text-3xl"> Investing in wppool for over 50 years</h3>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.</p>
 
                     <button  class="bg-[#2042B6] shadow-btn text-white border rounded-[124px] py-[18px] pr-[18px] pl-[19px]">Contact WPPOOL</button>
                 </div>
 
-                <div class="w-[523px] h-[420px]">
+                <div class="lg:w-[523px] h-[420px]">
                     <img class="w-full" src="./images/Mask group.png" alt="">
                 </div>
         </div>
@@ -621,11 +630,11 @@
 
      <!-- Portfolio Companies Section -->
 
-     <section id="companies" class="my-12 max-w-5xl mx-auto">
-        <h1 class="text-[#191618] text-5xl mb-12">Selected WPPOOL Portfolio Companies</h1>
+     <section id="companies" class="px-4 lg:px-0 my-12 max-w-5xl mx-auto">
+        <h1 class="text-[#191618] text-2xl lg:text-5xl mb-12">Selected WPPOOL Portfolio Companies</h1>
 
         <div>
-            <div class="grid grid-cols-5 gap-5 ">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-5 ">
                 <!-- card 1 -->
                 <div class="bg-[#FFFFFF] px-[16px] border border-red-400 rounded-md py-[48px] inline-block h-[120px]">
                     <img src="./images/Alibaba (1).png" alt="">
@@ -716,19 +725,19 @@
      </section>
 
 
-     <footer class=" bg-[#E6E6E6] py-[60px]">
+     <footer id="footer" class="px-4 lg:px-0 bg-[#E6E6E6] py-[60px]">
             <section class="my-12 max-w-5xl mx-auto ">
-                <div class="flex gap-[100px]">
-                    <div class="flex-1">
-                        <h2 class="text-4xl leading-[36px]">Experience remarkable 
+                <div class="flex flex-col lg:flex-row gap-8 ">
+                    <div class="lg:flex-1  ">
+                        <h2 class="lg:text-4xl text-xl leading-[36px]">Experience remarkable 
                             WordPress products with a 
                             new level of power, beauty, 
                             and human-centered designs.</h2>
                     </div>
     
-                    <div class="flex justify-between gap-[112px] flex-1">
-                        <div>
-                            <ul class="text-xl ">
+                    <div class="flex justify-between b gap-[90px] flex-1">
+                        <div class="flex-1">
+                            <ul class="lg:text-xl ">
                                 <li class="text-[#9FA0A1] ">Jump to</li>
                                 <li class="text-[#115CD9] ">About Us</li>
                                 <li class="text-[#115CD9] ">Portfolio</li>
@@ -739,7 +748,7 @@
                             </ul>
                         </div>
 
-                        <div class="text-xl">
+                        <div class="lg:text-xl ">
                             <div>
                                 <h6 class="text-[#191618] font-semibold">Cambridge</h6>
                                 <p>70728 Yost Burg, 
@@ -780,7 +789,7 @@
                         <a href="#">Privacy Policy</a>
                     </div>
 
-                    <div class="w-[517px]">
+                    <div class="lg:w-[517px]">
 
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaera </p>
                     </div>

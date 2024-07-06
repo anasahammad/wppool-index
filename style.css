@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #ededed;
 }
@@ -13,7 +16,7 @@ body{
 }
 
 .sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     padding: 28px 25px 38px 36px;
@@ -23,10 +26,20 @@ body{
     border-radius: 18px;
     z-index: 999;
     display: none;
+
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: auto; 
+        max-width: 100%; 
+        height: auto;
+        max-height: 100vh; 
+        padding: 10px;
+    }
 }
 
 
-/
 
 .owl-carousel{
    
