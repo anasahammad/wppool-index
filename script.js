@@ -1,4 +1,24 @@
 
+window.addEventListener('scroll', function(){
+    const navbar = document.getElementById('navbar')
+    const logo = document.getElementById('logo')
+    const rightSecton = document.getElementById('rightSection')
+    if(window.scrollY > 50){
+        navbar.classList.remove('bg-[#2042B6]')
+        navbar.classList.add('bg-[#F3F3F3]')
+        logo.src = "./images/logoSticky.png"
+        rightSecton.classList.remove('text-white')
+      
+    } else{
+        navbar.classList.remove('bg-[#F3F3F3]')
+        navbar.classList.add('bg-[#2042B6]')
+        logo.src = "./images/logo.png"
+        rightSecton.classList.add('text-white')
+    }
+})
+
+
+// toggle menu
  function sidebarOpen() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display= "block"
@@ -10,8 +30,8 @@
 
 
 
-// script.js
 
+// chart.js
 document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.getElementById('chart').getContext('2d');
     const chart = new Chart(ctx, {

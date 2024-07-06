@@ -21,96 +21,87 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>WPPOOL Index</title>
 </head>
-<body class="max-w-7xl mx-auto">
+<body class="max-w-7xl mx-auto ">
    
-    <!-- header section -->
-     <header class="bg-[#2042B6] min-h-[718px]">
-        <!-- nav -->
-         <nav class=" px-[36px] py-[34px] flex justify-between items-center ">
-            <!-- <i class="fa-solid fa-bars"></i> -->
-            <!-- <i class="fa-solid fa-xmark"></i> -->
-            
-            <div class="sidebar none">
-                <div class="flex justify-between items-center ">
+      <!-- header section -->
+  <header class=" ">
+    <!-- nav -->
+    <nav id="navbar" class=" max-w-6xl mx-auto  bg-[#2042B6] fixed top-0 left-0 right-0 z-10 px-5 py-2 rounded-lg mt-[20px] flex justify-between items-center transition-bg">
+      <div class="sidebar none">
+        <div class="flex justify-between items-center">
+          <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] bg-[#AFCD80] text-white">
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+          <div class="">
+            <button class="border px-4 py-2 bg-[#2042B6] rounded-[14px] text-white">Download the 2024 Report</button>
+          </div>
+          <button onclick="sidebarClose()" class="px-2">
+            <i class="fa-solid fa-xmark cursor-pointer w-[15px] h-[15px]"></i>
+          </button>
+        </div>
 
-                    <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] bg-[#AFCD80] text-white">   <i class="fa-solid fa-share-nodes "></i></div>
+        <ul class="my-8">
+          <li class="text-[18px]"><a href="#wppool-index" class="block p-2 hover:bg-gray-200">The WPPOOL Index</a></li>
+          <li class="text-[18px]"><a href="#all-companies" class="block p-2 hover:bg-gray-200">All Companies</a></li>
+          <li class="text-[18px]"><a href="#potential" class="block p-2 hover:bg-gray-200">Potential Future Listings</a></li>
+          <li class="text-[18px]"><a href="#state" class="block p-2 hover:bg-gray-200">State of USA</a></li>
+          <li class="text-[18px]"><a href="#stories" class="block p-2 hover:bg-gray-200">Stories & Ideas</a></li>
+          <li class="text-[18px]"><a href="#about" class="block p-2 hover:bg-gray-200">About WPPOOL</a></li>
+          <li class="text-[18px]"><a href="#companies" class="block p-2 hover:bg-gray-200">WPPOOL Portfolio Companies</a></li>
+          <li class="text-[21px] text-[#2042B6] mt-4"><a href="#" class="block p-2 hover:bg-gray-200">Visit WPPOOL</a></li>
+        </ul>
+      </div>
 
-                    <div class=""><button class="border px-4 py-2 bg-[#2042B6] rounded-[14px]  text-white">Download the 2024 Report</button></div>
+      <!-- logo -->
+      <div class="">
+        <img id="logo" src="/images/logo.png" alt="Logo" class="h-10">
+      </div>
 
-                    <button onclick=sidebarClose() class="px-2 "> <i class="fa-solid fa-xmark cursor-pointer w-[15px] h-[15px]"></i></button>
-                    
-                </div>
+      <div id="rightSection" class="flex text-white items-center gap-4">
+        <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] ">
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <button class="border rounded-[124px] py-[16px] px-4 ">Download the 2024 Report</button>
+        <div class="ml-4">
+          <button onclick="sidebarOpen()" id="" class="menuOpen focus:outline-none ">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-                <ul class="my-8">
-                    <li  class="text-[18px]"><a href="#wppool-index" class="block p-2  hover:bg-gray-200">The WPPOOL Index</a></li>
-                    <li class ="text-[18px]"><a href="#all-companies" class="block p-2  hover:bg-gray-200">All Companies</a></li>
-                    <li class ="text-[18px]"><a href="#potential" class="block p-2  hover:bg-gray-200">Potential Future Listings</a></li> 
-                    <li class ="text-[18px]"><a href="#state" class="block p-2  hover:bg-gray-200">State of USA</a></li> 
-                    <li class ="text-[18px]"><a href="#stories" class="block p-2  hover:bg-gray-200">Stories & Ideas</a></li> 
-                    <li class ="text-[18px]"><a href="#about" class="block p-2  hover:bg-gray-200">About WPPOOL</a></li> 
-                    <li class ="text-[18px]"><a href="#companies" class="block p-2  hover:bg-gray-200">WPPOOL Portfolio Companies</a></li> 
-
-                    <li class ="text-[21px] text-[#2042B6] mt-4"><a href="#" class="block p-2  hover:bg-gray-200">Visit WPPOOL</a></li> 
-                </ul>
+    <!-- Hero Section -->
+    <div class="bg-[#2042B6] h-screen  relative pb-6 pt-[107px] pl-[40px]">
+      <div class="w-full">
+        <div class="flex items-center text-white">
+          <div class="w-[312px] flex flex-col gap-[50px]">
+            <div>
+              <h1 class="text-4xl">60</h1>
+              <p>Countries</p>
             </div>
-
-            <!-- logo -->
-            <div class="">
-                <img src="/images/logo.png" alt="Logo" class="h-10">
-              
+            <div>
+              <h1 class="text-4xl">$100B</h1>
+              <p>Market cap</p>
             </div>
-
-            <div class="flex items-center gap-4">
-                <div class="rounded-full text-center border w-[50px] h-[50px] p-[14px] text-white">   <i class="fa-solid fa-share-nodes "></i></div>
-
-                <button class="border rounded-[124px] py-[16px] px-4 text-white">Download the 2024 Report</button>
-
-                <div class="ml-4">
-                    <button onclick=sidebarOpen()  id="" class="menuOpen focus:outline-none text-white">
-                         <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
+            <div>
+              <h1 class="text-4xl">3.5x</h1>
+              <p>Revenue multiple</p>
             </div>
-         </nav>
-
-         
-         <!-- Hero Section -->
-
-         <div class=" relative pt-[107px] pl-[40px]  ">
-            <div class="w-full">
-
-                <div class=" flex items-center text-white">
-                    <div class="w-[312px] flex flex-col gap-[50px]">
-                      <div>
-                          <h1 class="text-4xl">60</h1>
-                          <p class="">Countries</p>
-                      </div>
-                      <div>
-                          <h1 class="text-4xl">$100B</h1>
-                          <p>Market cap</p>
-                      </div>
-                      <div>
-                          <h1 class="text-4xl">3.5x</h1>
-                          <p>Revenue multiple</p>
-                      </div>
-                      <div>
-                          <h1 class="text-4xl">60%</h1>
-                          <p>LTM avg. revenue growth rate</p>
-                      </div>
-                    </div>
-                      <div>
-                          <h1 class="text-[78px] ">The WPPOOL Index</h1>
-                          <p>Monitor the performance of emerging, publicly traded, financial technology companies</p>
-                      </div>
-                  </div>
-      
-                 
+            <div>
+              <h1 class="text-4xl">60%</h1>
+              <p>LTM avg. revenue growth rate</p>
             </div>
-            <div class="absolute  rotate-12 top-9 left-[420px] mix-blend-multiply" style="background-image: url('./images/ff21461eecf254c2441f5f846da1202f.png'); background-size: cover; background-repeat: no-repeat; width: 549px; height: 542px;">
-               
-            </div>
-         </div>
-     </header>
+          </div>
+          <div>
+            <h1 class="text-[78px]">The WPPOOL Index</h1>
+            <p>Monitor the performance of emerging, publicly traded, financial technology companies</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute rotate-12 top-9  left-[420px] mix-blend-multiply" style="background-image: url('./images/ff21461eecf254c2441f5f846da1202f.png'); background-size: cover; background-repeat: no-repeat; width: 549px; height: 490px;">
+      </div>
+    </div>
+  </header>
 
 
      <!-- Wppool index dashboard -->
