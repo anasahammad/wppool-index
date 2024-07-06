@@ -78,5 +78,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
 
+// const slides = [...document.getElementsByClassName("sliderImage")]
+// console.log( slides);
+// let counter = 0;
 
-       
+// slides?.forEach((slide, index) => {
+//     slide.style.left = `${index * 100}`
+    
+// });
+   
+
+// const goPrev = ()=>{
+//     counter--
+//     sliderImage()
+// }
+// const goNext = ()=>{
+//     counter++
+//     sliderImage()
+// }
+// const sliderImage = ()=>{
+//     slides.forEach((slide)=>{
+//         slide.style.transform = `translateX(-${counter * 100}%)`
+//     })
+// }
+
+

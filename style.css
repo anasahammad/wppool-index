@@ -25,3 +25,20 @@ body{
     display: none;
 }
 
+
+/
+
+.owl-carousel{
+   
+}
+.owl-nav{
+    position: absolute;
+    bottom: -46px;
+}
+
+.custom-prev-icon, .custom-next-icon {
+    color: #2042B6;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 100%;  }
