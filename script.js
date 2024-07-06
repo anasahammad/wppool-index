@@ -9,7 +9,14 @@ window.addEventListener('scroll', function(){
         logo.src = "./images/logoSticky.png"
         rightSecton.classList.remove('text-white')
       
-    } else{
+    }
+     else if(window.scrollY > 50){
+        navbar.classList.remove('bg-[#2042B6]')
+        navbar.classList.add('bg-[#fff')
+        logo.src = "./images/logoSticky.png"
+        rightSecton.classList.remove('text-white')
+     }
+    else{
         navbar.classList.remove('bg-[#F3F3F3]')
         navbar.classList.add('bg-[#2042B6]')
         logo.src = "./images/logo.png"
