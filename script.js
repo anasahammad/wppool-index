@@ -49,17 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 label: 'WPPOOL',
                 backgroundColor: '#FC714D',
                 borderColor: '#FC714D',
-                data: [-10, 0, 5, 2, 20, 30, 45]
+                data: [0, 45, 85, 59, 39, 89, 95]
             }, {
                 label: 'Google',
                 backgroundColor: '#615DE3',
                 borderColor: '#615DE3',
-                data: [0, 20, 15, 10, 25, 35, 50]
+                data: [0, 20, 15, 70, 55, 89, 50]
             }, {
                 label: 'Microsoft',
                 backgroundColor: '#AFCD80',
                 borderColor: '#AFCD80',
-                data: [0, 30, 25, 20, 30, 40, 55, 90]
+                data: [0, 25, 10, 77, 73, 65, 80]
             }, {
                 label: 'Twitter',
                  backgroundColor: '#6F34A1',
@@ -93,6 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 y: {
                     display: true,
+                    beginAtZero: false,
+                    min: -10,
+                    max: 100,
+                    ticks: {
+                        callback: function(value, index, values){
+                            return value + '%';
+                        }
+                    },
                     title: {
                         display: true,
                         text: ''
