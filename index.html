@@ -17,11 +17,11 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+
     <title>WPPOOL Index</title>
 </head>
-<body class="max-w-7xl mx-auto ">
+<body class="max-w-7xl  mx-auto ">
    
       <!-- header section -->
   <header class="relative   ">
@@ -58,7 +58,7 @@
         <img id="logo" src="/images/logo.png" alt="Logo" class="h-10">
       </div>
 
-      <div id="rightSection" class="flex text-white items-center gap-4">
+      <div id="rightSection" class="flex  text-white items-center gap-4">
         <div class="rounded-full text-center hidden md:block border w-[50px] h-[50px] p-[14px] ">
           <i class="fa-solid fa-share-nodes"></i>
         </div>
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                 </header>
-                <div class="relative h-96">
+                <div id="chart-container">
                     <canvas id="chart"></canvas>
                 </div>
             </main>
@@ -807,7 +807,8 @@
             </section>
      </footer>
 
-     
+     <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
